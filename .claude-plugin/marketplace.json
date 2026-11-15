@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "india-day-trader-skill",
+  "description": "The Indian Day Trader skill pack for Claude (NSE & BSE): Trader skill v2",
+  "owner": {
+    "name": "Hemant Laddha",
+    "url": "https://github.com"
+  },
+  "plugins": [
+    {
+      "name": "india-day-trader-skill",
+      "description": "Claude skills for Indian day trading (NSE/BSE): a chart scanner, a news monitor, an entry timer, an exit planner, a time machine that replays 10,000 sessions, a risk manager, a budget manager, an order executor (paper by default, never without your yes), IST price alerts, a quarterly results analyst, and an NSE/BSE bulk & block deal tracker.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/HemantLaddha/india-day-trader-skill"
+    }
+  ]
+}
