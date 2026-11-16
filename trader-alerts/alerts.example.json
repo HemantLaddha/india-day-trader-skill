@@ -1,9 +1,0 @@
-[
-  {
-    "id": "reliance-plan-stop",
-    "symbol": "RELIANCE",
-    "type": "stop",
-    "price": 2500.0,
-    "note": "plan stop"
-  }
-]
