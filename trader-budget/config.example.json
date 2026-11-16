@@ -1,0 +1,5 @@
+{
+  "capital": 200000,
+  "max_loss_per_trade": 2000,
+  "currency": "INR"
+}
