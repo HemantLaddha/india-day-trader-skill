@@ -1,0 +1,91 @@
+Indian Day Trader Skill Pack - Claude Usage Guide
+=================================================
+
+This repository is the Indian-market version of the day-trader-skill project.
+It contains skill docs and Python tools for NSE/BSE trading workflows.
+
+How to use it in Claude
+-----------------------
+
+1. Open this repo folder as the active project/workspace in your Claude-capable environment.
+2. Make sure the repo root is the working directory.
+3. Ask Claude to use a specific skill, for example:
+   - "Use the trader-alerts skill."
+   - "Use the trader-analyst skill to analyze Reliance."
+   - "Use the trader-scanner skill to review watchlist ideas."
+   - "Use the trader-timemachine skill to replay a planned trade."
+
+4. If you want actual script output, run the Python files directly from the terminal:
+
+   cd day-trader-skill-main-indian-market
+   py -3 trader-alerts/alerts.py --json
+   py -3 trader-analyst/facts.py RELIANCE --json --quarters 2
+   py -3 trader-timemachine/timemachine.py --help
+
+Important notes
+---------------
+
+- The markdown SKILL files are instruction files for the AI workflow.
+- The real behavior comes from the Python scripts in each trader-* folder.
+- This repo is designed for local use in a Claude-enabled environment.
+- The cloud-only Claude UI may not directly execute your local Python scripts unless your environment supports local tool access.
+
+Skill folders included
+----------------------
+
+- trader-alerts
+- trader-analyst
+- trader-broker
+- trader-budget
+- trader-entry
+- trader-exit
+- trader-news
+- trader-pelosi
+- trader-risk
+- trader-scanner
+- trader-timemachine
+
+Example prompts
+--------------
+
+1. "Use the trader-alerts skill and tell me whether the Indian market is currently open or closed."
+2. "Use the trader-analyst skill to summarize Reliance Industries' latest quarter in INR terms."
+3. "Use the trader-budget skill to calculate a position size for a 1% risk plan on Infosys."
+4. "Use the trader-entry skill to propose a clean breakout entry setup for a Nifty 50 stock."
+5. "Use the trader-exit skill to suggest a stop-loss and target plan for Tata Motors."
+6. "Use the trader-risk skill to review the risk profile of a long position in HDFC Bank."
+7. "Use the trader-scanner skill to screen for strong trending stocks in the Indian market today."
+8. "Use the trader-timemachine skill to replay a planned day trade using a 10,000-simulation run."
+9. "Use the trader-news skill to summarize the most relevant market-moving news for Indian equities."
+10. "Use the trader-broker skill to plan a paper-trading order flow for a small-cap stock."
+11. "Use the trader-pelosi skill to evaluate whether the current setup matches a high-probability stock pattern."
+12. "Use the trader-analyst skill to compare quarterly revenue growth of TCS and Infosys."
+13. "Use the trader-alerts skill to explain the difference between regular market hours and Muhurat trading in India."
+14. "Use the trader-budget skill to calculate a risk-based position size for a flat portfolio with 2% max loss."
+15. "Use the trader-entry skill to define an opening-range breakout plan for a large-cap Indian stock."
+16. "Use the trader-exit skill to build a trade plan with a trailing stop for a momentum trade."
+17. "Use the trader-risk skill to flag concentration risk in a hypothetical portfolio of five Indian stocks."
+18. "Use the trader-scanner skill to identify candidate setups with volume and trend confirmation."
+19. "Use the trader-news skill to check whether overnight macro or corporate news affects the trading plan today."
+20. "Use the trader-timemachine skill to compare a breakout strategy versus a trend-following strategy for a NSE stock."
+21. "Use the trader-analyst skill to explain price action around an earnings report for HCL Tech."
+22. "Use the trader-budget skill to estimate a safe size when buying a stock after a gap-up open."
+23. "Use the trader-entry skill to review a pullback entry against support and volume for a bank stock."
+24. "Use the trader-risk skill to assess whether a 2-trade setup exceeds the planned portfolio risk."
+25. "Use the trader-alerts skill to monitor whether the Indian market is in pre-open, regular, or closed status."
+26. "Use the trader-scanner skill to shortlist high-liquidity Indian stocks suitable for an intraday breakout trade."
+27. "Use the trader-analyst skill to compare the latest quarter of Bharti Airtel with that of Vodafone Idea."
+28. "Use the trader-budget skill to size a trade with a stop loss of 1.5% and a target of 3.0% on a midcap stock."
+29. "Use the trader-news skill to assess whether a macro headline is likely to affect Nifty 50 sentiment today."
+30. "Use the trader-timemachine skill to explore whether a strategy performs better during the first hour or later in the session."
+
+Validation status
+-----------------
+
+The repo is currently in a validated working state. The project’s unittest suite passed:
+
+py -3 -m unittest discover -s tests -v
+
+Result: 13 tests ran and all passed.
+
+This confirms the repo’s current implementation is working as expected for the project contract and its local validation checks.
